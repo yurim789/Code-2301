@@ -12,78 +12,81 @@ a {
   text-decoration: none;
   color:#000;
 }
-.wrapper {
-  width:1200px;
-  margin:0 auto;
-  background-color: rgb(212, 209, 209);
-}
 
-.menu-box-item img {
-  width:200px;
-}
+.wrapper {
+  width:80%;
+  background-color: rgb(216, 217, 219);
+  margin:0 auto;
+  padding:20px 10px;
+} 
 
 .drawer-menu-button {
   width:200px;
   height:70px;
   border:none;
-  font-size: 24px;
+  font-size: 30px;
   color:#fff;
   background-color: rgb(52, 76, 207);
   border-radius: 10px;
   padding:0 auto;
-  margin:20px
-}
-
-.menu-name {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.menu-box {
-  width:90%;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  margin:0 auto;
-  margin-top:10px;
+  margin:20px 10px;
 }
 
 .menu-box-list {
-  width:90%;
-  display: flex;
-  margin-bottom:30px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width:100%;
+  /* background-color: #fff; */
 }
 
 .menu-box-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width:300px;
-  margin-right: 20px;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px #adacac;
-  background-color: #fff;
-  align-items: center;
+  flex:0 0 25%;
+  padding:0.5rem;
+  max-width:25%;
 }
 
-.menu-box-item:last-child {
-  margin-right:0;
+.menu {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(184, 183, 183);
+  padding:10px;
+  overflow:hidden;
+  width:100%;
+  background-color: #fff;
 }
 
 .menu-box-item a {
-  transition: opacity 300ms ease-in-out                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: filter 200ms ease-in-out;
 }
 
 .menu-box-item a:hover {
- opacity:.7; 
+  filter:blur(2px);
+ }
+
+.menu-box-name {
+  width:100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin:10px;
 }
 
 .menu-box-item img {
+  height:200px;
+  width:260px;
+  display: flex;
+  justify-content: space-between;
   object-fit: cover;
 }
 
-.menu-box-text {
-  width: 90%;
-  margin: 30px auto;
+.menu-box-info {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10px;
+  color:rgb(121, 120, 120)
 }
