@@ -1,0 +1,14 @@
+.box-wrapper {
+  display: none;
+}
+
+
+.box {
+  display: flex;
+  background-color: dodgerblue;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  color:#fff;
+  font-weight: 700;
+}

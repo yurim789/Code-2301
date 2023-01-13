@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  display:none;
+}
+
+a {
+  text-decoration: none;
+  color:#000;
+}
+
+.login-list {
+  display:flex;
+  justify-content: flex-end;
+  margin:20px 50px 20px 0;
+}
+
+.login-list a {
+  display:flex;
+  color:rgb(112, 110, 110);
+  padding:10px;
+}
+
+.gnb {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-left: 200px;
+}
+
+.gnb-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 410px;
+}
+
+.gnb-list a {
+  color:rgb(112, 110, 110);
+  padding:0px 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* .drop-down {
+  width: 100%;
+  display: flex;
+  /* justify-content: */
+  /* background-color: rgb(105, 104, 104);
+} */
+
+/* .sub {
+  width: 150px;
+}
+
+.sub li {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+
+.sub li a {
+  display: block;
+  color:#fff;
+} */
+
+.menu {
+  margin-right: 60px;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+}
+
+.slide-list {
+  position: relative;
+  width:300vw;
+  display: flex;
+  height: 100vh;
+  transition:transform 300ms ease-in-out;
+}
+
+.slide-item {
+  width:100vw;
+  height:100px;
+}
+
+.slide-item img {
+  width:100%;
+  height:550px;
+  object-fit: cover;
+}
+
+.btn-group {
+  width:100%;
+  height:60px;
+  position:absolute;
+  left:50%;
+  bottom:255px;
+  transform:translateX(-50%);
+  display:flex;
+  justify-content: center;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.btn-group button {
+  border:none;
+  color:#fff;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-right: 5px;
+}
+
+footer {
+  width:100%;
+}
+
+.footer-list{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  background-color: #444;
+  padding:20px;
+}
+
+.footer-list-txt {
+  display:flex;
+  justify-content: space-between;
+  color:#fff;
+}
+
+.footer-list-info {
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer-list-number {
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer-txt {
+  background-color: #333;
+}

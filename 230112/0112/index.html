@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="정보">
+  <meta name="keywords" content="검색키워드">
+  <meta name="author" content="유림">
+  <title>modal</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <button type="button" id="open-btn">모달열기</button>
+
+    <div class="img-list">
+      <img src="./images/김애옹.jpg" alt="김애옹">
+      <img src="./images/라이언1.png" alt="라이언">
+      <img src="./images/라이언2.png" alt="라이언">
+      <img src="./images/라이언3.png" alt="라이언">
+      <img src="./images/안아줘요.jpg" alt="안아줘요">
+    </div>
+
+    <div id="img-modal">
+      <div id="img-modal-box">
+        <button type="button" id="img-modal-btn" class="close-btn">X</button>
+        <div id="img-wrapper">
+          <img src="./images/김애옹.jpg" alt="김애옹">
+        </div>
+      </div>
+    </div>
+
+    <div id="modal">
+      <div id="modal-box">
+        <div id="modal-head">
+          <span>모달 타이틀</span>
+          <button type="button" id="modal-close" class="close-btn">X</button>
+        </div>
+        <div id="modal-sec">
+          <img src="./images/라이언1.png" alt="modal-sec-img">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatum ipsa nemo vitae eius commodi, dolore architecto temporibus fuga placeat similique vero fugit non asperiores laudantium itaque. Ab, quia ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi at expedita ipsam inventore explicabo atque voluptates repudiandae mollitia cupiditate veritatis, tempore neque error libero vero quaerat voluptate eius. Omnis?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./java/java.js"></script>
+</body>
+</html>

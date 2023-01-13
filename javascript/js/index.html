@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스 열고 닫기</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1 id="hello">안녕하세요</h1>
+    <h2 id="js">자바스크립트 너무 어려워요</h2>
+
+    <div class="box-wrapper">
+    <div class="box">
+      <p>BOX</p>
+      <button onclick="Box()" class="close-btn">X</button>
+    </div>
+    </div>
+
+    <button onclick="Box()" class="open-btn">Open</button>
+    <script src="./index.js"></script>
+  </body>
+</html>

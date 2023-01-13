@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*폰트 스타일 적용 및 기본 설정 초기화*/
+}
+
+#slider-wrapper {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  /*넘치는건 숨겨라*/
+  position: relative;
+  /*너를 기준으로 한다.*/
+}
+
+.slide {
+  position: absolute;
+  /*#slider-wrapper를 기준으로 움직여라*/
+  width: 400px;
+  height: 300px;
+  display: none;
+  /*모든 .slide를 숨겨둠*/
+}
+
+.slide:first-of-type {
+  display: block;
+}
+/* : 가상 클래스*/
+/*hover -> 마우스를 올린 상태가 됐을 때*/
+/*first : 첫째가 변함<명령이랑 타입이 다르면 변하지 않음>
+  first-child: 첫째가 변함<명령이랑 타입이 다르면 변하지 않음>
+  first-of-type: 첫째가 변함<자기랑 같은 타입에 첫째를 찾아서 바뀜>*/
+
+.slide img {
+  width: 100%;
+  /*부모 크기 100%로 따라가*/
+  object-fit: cover;
+}
+
+#next-btn,#prev-btn {
+  display: block;
+  position: absolute;
+  padding: 0.8em 1em;
+  top:50%;
+  transform: translateY(-50%);
+  /*부모의 크기가 아니라 자기 크기가 기준이 되어서 움직임*/
+}
+
+#next-btn {
+  right: 0;
+}
+
